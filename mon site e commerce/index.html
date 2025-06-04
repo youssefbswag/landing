@@ -1,90 +1,80 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot.fr - Boutique de Football</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components/banner.css">
-    <link rel="stylesheet" href="css/components/button.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Foot.fr - Boutique de Football</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
 
-    <!-- Bannière Hero -->
-    <div class="hero">
-        <div class="container">
-            <h1>Bienvenue sur Foot.fr</h1>
-            <h2>Votre boutique de football ultime</h2>
-            <a href="#products" class="btn-primary">Découvrir la collection</a>
+  <!-- Bannière Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>🏆 Bienvenue sur <span class="highlight">Foot.fr</span> 🏆</h1>
+      <h2>Votre boutique de football ultime</h2>
+      <a href="#products" class="btn-primary">Découvrir la collection</a>
+    </div>
+  </header>
+
+  <!-- Section Produits -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Nos Produits</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="image/crampon.webp" alt="Chaussures de Football">
+          <h3>Chaussures de Football</h3>
+          <p>99.99€</p>
+          <a href="#" class="btn-secondary">Acheter maintenant</a>
         </div>
-    </div>
-
-    <!-- Section Top Ventes -->
-    <div class="top-sales">
-        <h2>Top Ventes</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="image/mercu.webp" alt="Nike Air Zoom Mercurial">
-                <h3>Nike Air Zoom Mercurial</h3>
-                <p>119.99€</p>
-                <a href="#" class="btn-secondary">Ajouter au panier</a>
-            </div>
+        <div class="product-card">
+          <img src="image/barca.webp" alt="Maillots de Football">
+          <h3>Maillots de Football</h3>
+          <p>49.99€</p>
+          <a href="#" class="btn-secondary">Acheter maintenant</a>
         </div>
-    </div>
-
-    <!-- Section Produits -->
-    <div class="products">
-        <h2>Nos Produits</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="image/crampon.webp" alt="Chaussures de Football">
-                <h3>Chaussures de Football</h3>
-                <p>99.99€</p>
-                <a href="#" class="btn-secondary">Acheter maintenant</a>
-            </div>
-            <div class="product-card">
-                <img src="image/barca.webp" alt="Maillots de Football">
-                <h3>Maillots de Football</h3>
-                <p>49.99€</p>
-                <a href="#" class="btn-secondary">Acheter maintenant</a>
-            </div>
-            <div class="product-card">
-                <img src="image/ballon.webp" alt="Ballons de Football">
-                <h3>Ballons de Football</h3>
-                <p>29.99€</p>
-                <a href="#" class="btn-secondary">Acheter maintenant</a>
-            </div>
+        <div class="product-card">
+          <img src="image/ballon.webp" alt="Ballons de Football">
+          <h3>Ballons de Football</h3>
+          <p>29.99€</p>
+          <a href="#" class="btn-secondary">Acheter maintenant</a>
         </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Section Contact -->
-    <div class="contact">
-        <h2>Contactez-nous</h2>
-        <p>Une question ? Remplissez le formulaire ci-dessous :</p>
-        <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea placeholder="Votre message" rows="4" required></textarea>
-            <button type="submit" class="btn-primary">Envoyer</button>
-        </form>
-    </div>
-
-    <!-- Section Typeform -->
-    <div class="typeform-section">
-        <h2>Donnez-nous votre avis</h2>
-        <p>Nous aimerions connaître votre opinion pour améliorer notre service.</p>
-        <!-- Intégration du Typeform -->
-        <div class="typeform-embed">
-            <div data-tf-live="01JMYTN4XXJXSP7PPGF08C10PX"></div>
-            <script src="//embed.typeform.com/next/embed.js"></script>
+  <!-- Section Contact -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Votre nom</label>
+          <input type="text" id="name" placeholder="Votre nom" required>
         </div>
+        <div class="form-group">
+          <label for="email">Votre email</label>
+          <input type="email" id="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Votre message</label>
+          <textarea id="message" placeholder="Votre message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
     </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Foot.fr - Tous droits réservés</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Foot.fr - Tous droits réservés</p>
+    </div>
+  </footer>
 
 </body>
 </html>
