@@ -3,27 +3,29 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #131313; /* Noir profond */
+    color: #EAEAEA; /* Texte clair */
 }
 
 /* 🎉 Bannière Hero */
 .hero {
-    background-image: url("../image/back.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../image/back.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
     font-size: 48px;
     margin: 0;
+    font-weight: 700;
+    color: #FF5733; /* Rouge vif */
 }
 
 .hero h2 {
@@ -36,22 +38,26 @@ body {
 .top-sales {
     padding: 40px 20px;
     text-align: center;
+    background: #1E1E1E; /* Fond gris foncé */
 }
 
 .top-sales h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #FFD700; /* Jaune doré */
 }
 
 /* 🛍️ Section Produits */
 .products {
     padding: 40px 20px;
     text-align: center;
+    background: #222; /* Gris foncé */
 }
 
 .products h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #FF5733; /* Rouge vif */
 }
 
 .product-grid {
@@ -65,14 +71,14 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
     width: 300px;
     text-align: center;
 }
 
 .product-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .product-card img {
@@ -83,17 +89,18 @@ body {
 .product-card h3 {
     font-size: 20px;
     margin: 15px 0;
+    color: #FF5733;
 }
 
 .product-card p {
     font-size: 18px;
-    color: #ff5733;
+    color: #FFD700;
     font-weight: bold;
 }
 
 /* 📩 Section Contact */
 .contact {
-    background: #222;
+    background: #1E1E1E;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -102,6 +109,7 @@ body {
 .contact h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #FFD700;
 }
 
 .contact form {
@@ -112,25 +120,28 @@ body {
 .contact input,
 .contact textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
+    background: #333;
+    color: white;
 }
 
 .contact button {
-    background: #ff5733;
-    padding: 10px 20px;
+    background: #FF5733;
+    padding: 12px 20px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
     color: white;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
 .contact button:hover {
-    background: #c70039;
+    background: #C70039;
 }
 
 /* 🏁 Footer */
